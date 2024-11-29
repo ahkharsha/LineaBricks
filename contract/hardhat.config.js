@@ -1,6 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 
-const NEXT_PUBLIC_EDU_RPC = "";
+const NEXT_PUBLIC_BNB_RPC = "";
 const NEXT_PUBLIC_PRIVATE_KEY = "";
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -19,7 +19,7 @@ module.exports = {
       chainId: 31337,
     },
     bsc: {
-      url: NEXT_PUBLIC_EDU_RPC,
+      url: NEXT_PUBLIC_BNB_RPC,
       accounts: [`0x${NEXT_PUBLIC_PRIVATE_KEY}`],
     },
   },

@@ -230,7 +230,7 @@ const Header = () => {
                                   </Link>
                                 </h6>
                                 <span className="price">
-                                  {userBlance?.slice(0, 6)} EDU
+                                  {userBlance?.slice(0, 6)} LineaETH
                                 </span>
                               </div>
                               <div className="button"></div>
