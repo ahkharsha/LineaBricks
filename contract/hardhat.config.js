@@ -1,7 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
-
-const NEXT_PUBLIC_BNB_RPC = "";
-const NEXT_PUBLIC_PRIVATE_KEY = "";
+require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -15,12 +13,12 @@ module.exports = {
     },
   },
   networks: {
-    hardhat: {
-      chainId: 31337,
-    },
-    bsc: {
-      url: NEXT_PUBLIC_BNB_RPC,
-      accounts: [`0x${NEXT_PUBLIC_PRIVATE_KEY}`],
+    // hardhat: {
+    //   chainId: 31337,
+    // },
+    polygon_amoy: {
+      url: process.env.NEXT_PUBLIC_POLYGON_AMOY_RPC,
+      accounts: [`0x${process.env.NEXT_PUBLIC_PRIVATE_KEY}`],
     },
   },
 };
